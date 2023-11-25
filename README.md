@@ -6,7 +6,7 @@ This Timestamp Microservice project provides an API endpoint to convert timestam
 
 ## API Endpoints Address
 `https://boilerplate-project-timestamp.harviando.repl.co/api/`
-<p><sub><i>If the server was not up the first time, please retry in 30 seconds</i></sub></p>
+<p><sub><i>*If the server was not up the first time, please retry in 30 seconds.</i></sub></p>
 
 ## API Endpoints and Features
 
