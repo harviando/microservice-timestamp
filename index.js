@@ -24,6 +24,20 @@ app.get("/api/hello", function (req, res) {
   res.json({greeting: 'hello API'});
 });
 
+// API to convert date to timestamp and unix value
+app.get('/api/:date_value', (req, res) => {
+  const { date_value } = req.params;
+  const date = new Date(date_value);
+
+  if (isNaN(date)) {
+    res.json({ error: 'Invalid Date.' })
+  } else  {
+    res.json({
+      unix: date.getTime(),
+      utc: date.toUTCString()
+    });
+  }
+});
 
 
 // listen for requests :)
